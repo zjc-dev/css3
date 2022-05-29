@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>精灵动画</title>
+  <style>
+    .box {
+      position: absolute;
+      left: 0;
+      width: 140px;
+      height: 140px;
+      background-image: url(./images/bg.png);
+      /* steps和小图的个数一样多   */
+      animation: run 1s steps(12) infinite,
+        translate 1s forwards;
+    }
+
+    @keyframes run {
+      100% {
+        /* 无限循环 */
+        /* 1680和图片的整体宽度一样 */
+        background-position: -1680px;
+      }
+    }
+
+    @keyframes translate {
+
+      /* 如果动画的开始状态和默认状态相同,就可以不设置开始状态from */
+      100% {
+        /* transform: translate(800px); */
+        left: 800px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>
