@@ -1,0 +1,108 @@
+body {
+    background-color: #f7f7f8;
+}
+
+/* 公共样式 */
+.red {
+    color: #cf4444;
+}
+
+.pannel {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* 主体样式 */
+.main {
+    /* 内容的最下端需要和底部保持距离 所以需要设置80px */
+    padding: 12px 11px 80px;
+}
+
+.user_msg {
+    display: flex;
+    /* 侧轴对齐 */
+    align-items: center;
+    padding: 15px 0 15px 11px;
+}
+
+.user_msg .location {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(90deg,
+            #6fc2aa 5%,
+            #54b196 100%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+.user_msg .user {
+    flex: 1;
+}
+
+.user_msg .more {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    color: #808080;
+}
+
+.user_msg .user .top {
+    display: flex;
+}
+
+.user_msg .user .top h5 {
+    width: 55px;
+}
+
+.user_msg .user .bottom {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+
+
+/* 底部样式 */
+.pay {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    /* 调节主轴对齐方式 */
+    justify-content: space-between;
+    /* 垂直居中 调节侧轴垂直方式*/
+    align-items: center;
+    /* 块级元素 有了固定定位,如果不指定宽度和高度 默认宽高和内容大小一样 */
+    width: 100%;
+    height: 80px;
+    padding: 0 11px;
+    border-top: 1px solid #ededed;
+}
+
+.pay .left {
+    font-size: 12px;
+    color: #1e1e1e;
+}
+
+.left span i {
+    font-size: 20px;
+}
+
+.pay .right a {
+    display: block;
+    width: 90px;
+    height: 35px;
+    background-image: linear-gradient(90deg,
+            #6fc2aa 5%,
+            #54b196 100%);
+    border-radius: 3px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 13px;
+    color: #fff;
+}
