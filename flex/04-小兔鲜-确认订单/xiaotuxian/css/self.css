@@ -106,3 +106,101 @@ body {
     font-size: 13px;
     color: #fff;
 }
+
+/* 商品区域 */
+.goods {
+    padding: 15px 0 15px 11px;
+    display: flex;
+}
+
+.goods .pic {
+    width: 85px;
+    margin-right: 10px;
+}
+
+.goods .info {
+    flex: 1;
+}
+
+.goods .info h5 {
+    font-size: 12px;
+    color: #262626;
+    margin-right: 10px;
+    font-weight: 400;
+
+}
+
+.goods .info p {
+    width: 95px;
+    height: 20px;
+    margin: 5px 0;
+    color: #888;
+    font-size: 12px;
+    background-color: #f7f7f8;
+}
+
+.goods .info p span:first-child {
+    margin-right: 5px;
+}
+
+.goods .info .price {
+    font-size: 12px;
+}
+
+.goods .info .price i {
+    font-size: 16px;
+}
+
+.goods .info .price span:last-child {
+    margin-left: 5px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.goods .count {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+
+/* 快递信息 */
+.rest {
+    padding: 15px;
+}
+
+.rest div {
+    display: flex;
+}
+
+.rest div:nth-child(2n+1) {
+    justify-content: space-between;
+}
+
+.rest div:nth-child(2) h5 {
+    margin-right: 20px;
+}
+
+.rest h5 {
+    font-size: 13px;
+    color: #262626;
+    font-weight: 400;
+}
+
+.rest p {
+    font-size: 13px;
+    color: #262626;
+}
+
+.rest div:nth-child(2) p {
+    font-size: 12px;
+    color: #989898;
+}
+
+.rest div {
+    margin-bottom: 30px;
+}
+
+.rest div:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,65 @@
+.xtx_body {
+    padding: 30px 0 85px;
+    background-color: #f6f6f6;
+}
+
+.xtx_body .wrapper {
+    display: flex;
+}
+
+.xtx_body .wrapper .aside {
+    width: 227px;
+    /* 最小高度500 */
+    min-height: 500px;
+    margin-right: 18px;
+    background-color: pink;
+}
+
+.xtx_body .wrapper .main {
+    flex: 1;
+    min-height: 500px;
+}
+
+.wrapper .main .overview {
+    display: flex;
+    height: 132px;
+    margin-bottom: 18px;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.overview div {
+    display: flex;
+    justify-content: space-evenly;
+    /* 侧轴居中 */
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+.overview div:first-child {
+    border-right: 1px solid #f4f4f4;
+}
+
+.overview div img {
+    width: 25px;
+    margin-bottom: 10px;
+}
+
+.overview div a:last-child img {
+    width: 18px;
+}
+
+
+/* .overview div a {
+    text-align: center;
+} */
+
+.overview div span {
+    font-size: 25px;
+    color: #e05e30;
+}
+
+.overview div p {
+    font-size: 16px;
+}
